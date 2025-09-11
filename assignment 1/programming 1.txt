@@ -1,0 +1,67 @@
+ty.py
+
+You need to use an input() to ask the user for their details.
+
+user_name = "michael"
+
+When you set the value in code like above from line 1, it is called hard-coding.
+
+The user may have a different name so you need to soft-code it by using an input.
+
+===========================================================================================================
+
+no 3.py
+
+Again you need to ask the user for input. Not use hard-coded values. 
+
+Also, total = int(12+50)
+
+12 and 50 are integer values so you don't need to convert them to ints.
+
+total = 12 +50 would work the same.
+
+===========================================================================================================
+
+Can you go through all of your code and where you have hard-coded put in input statements. 
+
+example:
+#ask the user for their age
+age = input('Enter your age')
+#assume they enter an integer
+age = int(age) # we need to convert here because all input is string(text) datatype
+===========================================================================================================
+
+
+no 7.py
+
+total_billprice = int(250)
+print(total_billprice)
+
+no_diners = int(10)
+print(no_diners)
+
+eachperson_pay = int(25)
+print(total_billprice/no_diners/eachperson_pay)
+
+
+You should generalise this:
+
+total_billprice = input('Enter total bill')
+print(total_billprice)
+
+no_diners = input('Enter number of diners')
+print(no_diners)
+
+eachperson_pay = int(total_billprice)/int(no_diners)
+print(eachperson_pay)
+
+
+=========
+
+print(total_billprice/no_diners/eachperson_pay)
+
+the line above does not give the correct answer even for your hardcoded values. Can you see why?
+
+===========================================================================================================
+
+Can you upload the missing questions from this assignment.
