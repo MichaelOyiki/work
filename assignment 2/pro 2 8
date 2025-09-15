@@ -1,0 +1,10 @@
+no = input('Enter a number ')
+if no == "1":
+    print('Thank you')
+if no == "2":
+    print('Well Done')
+if no == "3":
+    print('Correct')
+else:
+    if no != "1" or "2" or "3":
+        print('Error message')
