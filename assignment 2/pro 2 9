@@ -2,7 +2,7 @@ unit = input('Enter a number ')
 unit = int(unit)
 if (float(unit))<=100:
     print('Your bill is',(unit)*5,'cents')
-if (int(unit))<250:
+if (int(unit))<=250:
     print('Your bill is',(unit)*10,'cents')
 else:
     if (int(unit))>250:
