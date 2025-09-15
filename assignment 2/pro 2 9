@@ -1,10 +1,9 @@
 unit = input('Enter a number ')
 unit = int(unit)
-bill = unit*5
 if (float(unit))<=100:
-    print((unit)*5)
+    print('Your bill is',(unit)*5,'cents')
 if (int(unit))<250:
-    print((unit)*10)
+    print('Your bill is',(unit)*10,'cents')
 else:
     if (int(unit))>250:
-        print((unit)*15)
+        print('Your bill is',(unit)*15,'cents')
