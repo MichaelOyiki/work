@@ -1,0 +1,10 @@
+userage = input('Enter your age ')
+if (int(userage)>=18):
+    print('You can vote')
+if (int(userage)==17):
+    print('You can learn to drive')
+if (int(userage)==16):
+    print('You can buy a lottery ticket')
+else:
+    if (int(userage)<16):
+        print('You can go Trick-or-Treating')
