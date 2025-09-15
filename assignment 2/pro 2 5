@@ -1,0 +1,8 @@
+weatherisrainy = input('Is the weather rainy ')
+weatheriswindy = input('is the weather windy ')
+if weatherisrainy and weatheriswindy == 'yes':
+    print('It is too windy for an umbrella')
+else:
+     print('Take an umbrella')
+    
+    
