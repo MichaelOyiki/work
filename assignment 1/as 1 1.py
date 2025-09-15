@@ -1,2 +1,3 @@
-user_name = 'michael'
+user_name = input(michael)
+
 print('Hello', user_name)
