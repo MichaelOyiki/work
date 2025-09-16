@@ -1,0 +1,5 @@
+name = input('Enter your name ')
+times = int(input('enter a number '))
+for letter in name:
+    for i in range(times):
+        print(letter)
