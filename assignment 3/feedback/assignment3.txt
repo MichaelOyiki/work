@@ -1,0 +1,3 @@
+Your code is excellent. For program 4, the loops need to be switched.
+
+For example, if the input is as and 3, the output should be asasas not aaasss.
