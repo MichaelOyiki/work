@@ -1,0 +1,15 @@
+p1 doesn't output the correct output but the logic is good
+
+p4 you need to check more colour combinations:
+
+if user_colour == 'red' or user_colour == 'Red' or user_colour == 'RED'
+
+p5 Your if statement on line 3 is properly constructed and you need to use a nested if in this problem
+
+p6 after line 1 you could write userage = int(userage) then you would not need to keep writing int(userage). Also, the else at the end doesn't need an if. Else will always run if nothing before it is true.
+
+p7 same idea with int() and also else doesn't need an if
+
+p8 else doesn't need an if
+
+p9 On line 2 you converted unit to an int(). You don't need to convert it to a float for the rest of the program. The calculation is not correct for the different unit values.
