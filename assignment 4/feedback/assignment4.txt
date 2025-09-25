@@ -1,0 +1,9 @@
+For program 2, i%2 == 0 for an even number and i%2==1 for an odd number.
+
+You need to test for even numbers. I don't know why line 4 is present but it is not necessary
+
+programs 3 and 4 don't do what is asked. The user should give you a number and you print the sum of all the odd or even numbers from 0 to the user number.
+
+Can you write the code for programs 6 -8
+
+Program 5 is very good.
