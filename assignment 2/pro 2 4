@@ -1,5 +1,5 @@
 user_colour = input('Enter a colour ')
-if user_colour == "red":
+if user_colour == 'red' or user_colour == 'Red' or user_colour == 'RED':
     print('I like red too')
 else:
     print('I dont like the colour', user_colour, 'I prefer red')
