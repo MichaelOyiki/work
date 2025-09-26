@@ -1,8 +1,7 @@
-a = input('Enter a number')
-if((int(a)<10)):
+a = int(input('Enter a number'))
+if(a<10):
     print('Too low')
-elif ((int(a)>=(10)) and ((int(a)<=20))):
+elif (a)>=(10) and (a<=20):
     print('Correct')
 else:
-    if ((int(a)>(20))):
-        print('Too high')
+    print('Too high')
