@@ -1,0 +1,24 @@
+# Q2: Take grades, return average and letter grade, stop when negative entered
+
+grades = []
+while True:
+    grade = int(input("Enter test grade (negative to stop): "))
+    if grade < 0:
+        break
+    grades.append(grade)
+
+if grades:
+    avg = sum(grades) / len(grades)
+    if avg >= 90:
+        letter = 'A'
+    elif avg >= 80:
+        letter = 'B'
+    elif avg >= 70:
+        letter = 'C'
+    elif avg >= 60:
+        letter = 'D'
+    else:
+        letter = 'F'
+    print(f"Average: {avg:.2f}, Letter grade: {letter}")
+else:
+    print("No grades entered.")
