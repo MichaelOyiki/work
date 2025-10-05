@@ -1,0 +1,7 @@
+# Q6: Take numbers until total sum > 50
+
+total = 0
+while total <= 50:
+    num = int(input("Enter a number: "))
+    total += num
+print("Total sum is greater than 50:", total)
