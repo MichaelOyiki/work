@@ -1,0 +1,15 @@
+# Q8: Number guessing game, tell user high/low, count attempts
+
+secret = 17  # Example secret value
+attempts = 0
+
+while True:
+    guess = int(input("Guess the number: "))
+    attempts += 1
+    if guess < secret:
+        print("Too low")
+    elif guess > secret:
+        print("Too high")
+    else:
+        print(f"Well done! You guessed it in {attempts} attempts.")
+        break
