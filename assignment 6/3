@@ -1,0 +1,8 @@
+# Q3: Output even numbers from 0 to user-provided number
+
+n = int(input("Enter a number: "))
+i = 0
+while i <= n:
+    if i % 2 == 0:
+        print(i)
+    i += 1
