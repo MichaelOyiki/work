@@ -1,0 +1,11 @@
+# Q5: Print 1 to n squared, stop if 50 iterations (use break)
+
+n = int(input("Enter n: "))
+i = 1
+count = 0
+while i <= n ** 2:
+    print(i)
+    count += 1
+    if count == 50:
+        break
+    i += 1
