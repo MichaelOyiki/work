@@ -8,4 +8,10 @@ while True:
     
   number =  input('enter a number ')
   for digit in number:
-      print(int(digit)**3)
+      total += (int(digit)**3)
+      
+  if total == int(number):
+        print(number, "is an Armstrong number.")
+  else:
+     print(number, "is NOT an Armstrong number.")
+      
