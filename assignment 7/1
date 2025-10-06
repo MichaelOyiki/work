@@ -1,0 +1,11 @@
+#write a program that takes integers from the user and returns
+#the average.
+
+total = 0
+count = 0
+
+while True:
+    
+  number =  input('enter a number ')
+  for digit in number:
+      print(int(digit)**3)
