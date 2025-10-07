@@ -1,0 +1,2 @@
+binary_num = input('enter a number ')
+print(int(str(binary_num), 2))
