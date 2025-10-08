@@ -1,0 +1,16 @@
+#Q2 print count of positive and negative numbers
+
+positive_count = 0
+negative_count = 0
+
+while True:
+    num = int(input("Enter a number (empty to stop): "))
+    if num == 0:
+        break
+    elif num > 0:
+        positive_count += 1
+    elif num < 0:
+        negative_count += 1
+
+print("Count of positive numbers entered:", positive_count)
+print("Count of negative numbers entered:", negative_count)
