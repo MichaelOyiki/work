@@ -1,0 +1,7 @@
+total = 0
+
+N = int(input('enter a number>20 '))
+for i in range(11,N):
+    print(i)
+
+
