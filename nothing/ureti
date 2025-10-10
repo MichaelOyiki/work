@@ -1,0 +1,10 @@
+N = int(input('enter a number>20 '))
+
+while True:
+    if N <= 20:
+        break
+    for i in range(11,N):
+        print(i)
+    break
+    if i == (N%7):
+       print('Topsy')
