@@ -1,1 +1,12 @@
+a = int(input('enter a number '))
+i = a
 
+while True:
+    lastdigit = i%10
+    if lastdigit == 8:
+        print(i,'ends in 8')
+    elif lastdigit == 4:
+        print(i,'ends in 4')
+    else:
+        print('ends in neither')
+    break
