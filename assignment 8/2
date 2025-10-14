@@ -1,12 +1,15 @@
-num = int(input('enter a number '))
+num = int(input('enter a number thats >20 '))
+N = num
 
 while True:
-    if (num%3+num%7) == 0:
-        print(num,'divides by both')
-    elif (num%3) == 0:
-        print(num, 'divides by 3')
-    elif (num%7) == 0:
-        print(num, 'divides by 7')
+    if N <= 20:
+        break
+    if (N%3+N%7) == 0:
+        print('TipsyTopsy')
+    elif (N%3) == 0:
+        print('Tipsy')
+    elif (N%7) == 0:
+        print('Topsy')
     else:
         print('nah')
     break
