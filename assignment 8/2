@@ -1,1 +1,12 @@
+num = int(input('enter a number '))
 
+while True:
+    if (num%3+num%7) == 0:
+        print(num,'divides by both')
+    elif (num%3) == 0:
+        print(num, 'divides by 3')
+    elif (num%7) == 0:
+        print(num, 'divides by 7')
+    else:
+        print('nah')
+    break
