@@ -1,0 +1,9 @@
+word = input('enter any word ')
+if word[0] ==  'a' or word[0] ==  'e'or word[0] == 'i'or word[0] == 'o'or word[0] == 'u':
+    print(word+'way')
+
+else:
+    newword = ''
+    for i in range(1, len(word)):
+        newword = newword+word[i]
+    print(newword+word[0]+'ay')
