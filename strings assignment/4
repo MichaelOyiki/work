@@ -1,0 +1,8 @@
+count = 0
+
+wrd = input('enter any word ')
+letter = input('enter a letter ')
+for i in wrd:
+    if i == letter:
+        count += 1
+    
