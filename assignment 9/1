@@ -1,0 +1,4 @@
+i = input('enter a string')
+for u in i:
+    print(len(i))
+    break
