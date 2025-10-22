@@ -1,0 +1,6 @@
+l = 'a'
+d = '$'
+wrd = 'anaconda'
+ding = wrd[1:8]
+wrd2 = wrd[0:1]+ding.replace(l,d)
+print(wrd2)
