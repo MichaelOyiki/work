@@ -1,0 +1,6 @@
+string = (input('enter a string of digits'))
+x = string[0::3]
+total = 0
+for i in x:
+    total = total+int(i)
+    print('Total is equal to',total)
