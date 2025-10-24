@@ -1,0 +1,5 @@
+wrd = input('enter a string')
+if wrd[1::1] == wrd[-1::-1]:
+    print('True')
+else:
+    print('False')
