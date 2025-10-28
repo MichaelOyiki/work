@@ -1,1 +1,7 @@
-
+X = (input('write any'))
+n = len(X)
+while True:
+    sig = int(str(X)[0])
+    Y = n * 10 + sig
+    print(Y)
+    break
