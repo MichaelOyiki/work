@@ -1,0 +1,15 @@
+guesses = []
+i = 0
+while i < 8:
+    guess = int(input('Guess a number between 1 and 100 '))
+    guesses.append(guess)
+    if guess == 7:
+        print('You win')
+        break
+    elif guess < 7:
+        print('Too low')
+    else:
+        print('Too high')
+    i += 1
+    if i == 8:
+        print('Game Over answer is 7')
