@@ -1,8 +1,6 @@
-guesses = []
 i = 0
 while i < 8:
     guess = int(input('Guess a number between 1 and 100 '))
-    guesses.append(guess)
     if guess == 7:
         print('You win')
         break
