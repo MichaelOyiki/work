@@ -1,0 +1,41 @@
+givennum = int(input('enter a random number'))
+p = givennum
+i = p%10
+g = int(p/10)%10
+j = int(p/100)%10
+s = int(p/1000)%10
+o = 'I'
+l = 'V'
+w = 'X'
+q = 'L'
+f = 'C'
+v = 'M'
+x = 'D'
+if givennum > 5000:
+    print()
+if i <= 3:
+    print(o*i)
+elif (i) == 4:
+    print((o),l)
+elif i < 9:
+    print(l,(o)*(i-5))
+elif i == 9:
+    print((o),w)
+if g <= 3:
+    print(w*g)
+elif g == 4:
+    print(w,q)
+elif g < 9:
+    print(q,(w)*(g-5))
+elif g == 9:
+    print((w),f)
+if j <= 3:
+    print((f*j))
+elif j == 4:
+    print(f,x)
+elif j < 9:
+    print(x,(f)*(j-5))
+elif j == 9:
+    print((f),v)
+if s <= 4:
+    print((v*s))
