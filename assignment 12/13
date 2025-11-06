@@ -1,0 +1,7 @@
+vowels = ('a','e','i','o','u')
+wrd = input('enter a word')
+vowelcount = 0
+for i in wrd:
+    if i in vowels:
+        vowelcount += 1
+        print(vowelcount) 
