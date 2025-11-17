@@ -1,0 +1,10 @@
+i = 0
+g = []
+while i < 2:
+    binary_num = input('enter 2 binary numbers ')
+    g.append(binary_num)
+    i += 1
+    print(int(str(binary_num), 2))
+print(sum[g])
+
+    
