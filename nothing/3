@@ -1,0 +1,11 @@
+binary1 = input('enter a number')
+binary2 = input('enter a number')
+#total = (binary1+binary2)
+for i in range(-1,-len(binary1)-1,-1):
+    #if int(binary.index(i))+binary2.index(i) ==2:
+        print(int(binary1[i])+int(binary2[i]))
+        if (int(binary1[i])+int(binary2[i])) <= 2:
+            print((int(binary1[i])+int(binary2[i]))-2)
+            
+
+
