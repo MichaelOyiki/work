@@ -1,0 +1,24 @@
+carry = 0
+total = ""
+shortest = ''
+longest = ''
+binary1 = input('enter a number')
+binary2 = input('enter a number')
+if len(binary1) <= len(binary2):
+    shortest = binary1
+    longest = binary2
+else:
+    shortest = binary2
+    longest = binary1
+#total = (binary1+binary2)
+for i in range(-1,-len(binary1)-1,-1):
+    total = int(binary1[i])+int(binary2[i])
+    #if int(binary.index(i))+binary2.index(i) ==2:
+        #print(int(binary1[i])+int(binary2[i]))
+    if (total) >= 2:
+        carry = 1
+        print(total-2+carry)
+    else:
+        carry = 0
+        print(total)
+            
