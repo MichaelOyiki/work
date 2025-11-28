@@ -1,0 +1,54 @@
+u = input('U+')
+totalint = ''
+for i in u:
+    if i == '0':
+        totalint = totalint+'0000'
+#print(totalint)
+    elif i == '1':
+        totalint = totalint+'0001'
+#print(totalint)
+    elif i == '2':
+        totalint = totalint+'0010'
+#print(totalint)
+    elif i == '3':
+        totalint = totalint+'0011'
+#print(totalint)
+    elif i == '4':
+        totalint = totalint+'0100'
+#print(totalint)
+    elif i == '5':
+        totalint = totalint+'0101'
+#print(totalint)
+    elif i == '6':
+        totalint = totalint+'0110'
+#print(totalint)
+    elif i == '7':
+        totalint = totalint+'0111'
+#print(totalint)
+    elif i == '8':
+        totalint = totalint+'1000'
+#print(totalint)
+    elif i == '9':
+        totalint = totalint+'1001'
+#print(totalint)
+    elif i == 'A':
+        totalint = totalint+'1010'
+#print(totalint)
+    elif i == 'B':
+        totalint = totalint+'1011'
+#print(totalint)
+    elif i == 'C':
+        totalint = totalint+'1100'
+#print(totalint)
+    elif i == 'D':
+        totalint = totalint+'1101'
+#print(totalint)
+    elif i == 'E':
+        totalint = totalint+'1110'
+#print(totalint)
+    if i == 'F':
+        totalint = totalint+'1111'
+print(totalint)
+if len(totalint) == 16:
+    totalint = '1100'+totalint+'10'
+    print(totalint)
