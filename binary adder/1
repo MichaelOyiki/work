@@ -1,5 +1,5 @@
 carry = 0
-total = ""
+totalstring = ""
 shortest = ''
 longest = ''
 binary1 = input('enter a number')
@@ -17,9 +17,13 @@ for i in range(-1,-len(shortest)-1,-1):
         #print(int(binary1[i])+int(binary2[i]))
     if (total) >= 2:
         carry = 1
-        print(total-2)
+        #print(total-2)
+        totalstring = str(total-2)+totalstring
     else:
         carry = 0
-        print(total)
-print(carry)
+        #print((total))
+        totalstring = str(total)+totalstring
+#print((carry))
+totalstring = str(carry)+totalstring
+print(totalstring)
             
