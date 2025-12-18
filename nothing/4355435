@@ -1,0 +1,19 @@
+num = input('')
+num2 = num[-1]
+num3 = num[:-1]
+rev = ''
+for i in range(-1,-len(num3)-1,-1):
+    rev = rev+num3[i]
+print(rev)
+even = ''
+for i in range(0,len(rev),2):
+    even = even + rev[i]
+print(even)
+odd = ''
+for i in range(1,len(rev),2):
+    odd = odd + rev[i]
+print(odd)
+if int(even[i]*2)>9:
+    even = even[i-9]
+print(even)
+        
