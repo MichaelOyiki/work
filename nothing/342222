@@ -1,0 +1,25 @@
+num = input('')
+num2 = num[-1]
+num3 = num[:-1]
+rev = ''
+for i in range(-1,-len(num3)-1,-1):
+    rev = rev+num3[i]
+print(rev)
+totalev = 0
+totalodd = 0
+for i in range(0,len(rev)+1):
+    if i%2 == 0:
+        number = int(rev[i])
+        #totalev = totalev+rev[i]
+        if (number)*2>9:
+            totalev = totalev+(number*2-9)
+        else:
+            totalev = totalev + number
+print(totalev)
+    #else:
+        #totalodd = totalodd+int(rev[i])
+#print(totalev)
+#print(len(totalev))
+#print(len(totalodd))
+
+    
