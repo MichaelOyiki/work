@@ -1,0 +1,20 @@
+#cardNum = input('Welcome to CardCheck. Enter your card number:')
+#cardNum2 = int(cardNum)
+#while cardNum2> 9:
+    #cardNum2 = cardNum2//10
+#if cardNum2 == 7:
+    #print('This is a ZincCard')
+#elif cardNum2 == 8:
+    #print('This is a WinCard')
+attempts = 0
+check = False
+while attempts < 3:
+    cardNum = input('Welcome to CardCheck. Enter your card number:')
+    attempts += 1
+    
+#if not check:
+    #print('User is blocked due to invalid input')
+#else:
+    #continue
+    
+    
