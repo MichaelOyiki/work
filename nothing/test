@@ -11,10 +11,24 @@ check = False
 while attempts < 3:
     cardNum = input('Welcome to CardCheck. Enter your card number:')
     attempts += 1
-    
+    if len(cardNum)!= 16:
+        print('Invalid input, please try again')
+        if attempts == 3:
+            print('User blocked due to invalid input')
+    else:
+        expdate = input('Enter the card expiry date e.g. 11/26 should by entered as 1126:')
+        break
+expnum = int(expdate)
+for i in range(1):
+    a = expnum//1000
+    b = expnum%10
+    c = expnum%100//10
+    d = expnum%1000//100
+cvv1 = (a+b+c+d)
+cvv2 = cardNum[0:2]
+f = int(cvv2)
+print(f)
 #if not check:
     #print('User is blocked due to invalid input')
 #else:
     #continue
-    
-    
