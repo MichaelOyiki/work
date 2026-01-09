@@ -1,0 +1,35 @@
+val = [17,23,18,19]
+print("The list is:",val)
+while True:
+    print("Main Menu")
+    print("1.Insert")
+    print("2.Delete")
+    print("3.Exit")
+    break
+ch = int(input("Enter your choice 1/2/3:"))
+if ch==1:
+    item = int(input("Enter item:"))
+    pos = int(input("Insert at which position?"))
+    index = pos - 1
+    val.insert(index,item)
+    print("Success! List is now:",val)
+elif ch==2:
+    print("Deletion Menu")
+    print("1.Delete using Value")
+    print("2.Delete using Index")
+    print("3.Delete a sublist")
+    ch2 = int(input("Enter your choice 1/2/3:"))
+    if ch2==1:
+        num = int(input("Enter a number to remove"))
+        val.remove(num)
+    elif ch2==2:
+        pos = int(input("Delete at which position?"))
+        index = pos - 1
+        val.pop(index)
+    elif ch2==3:
+        subl = int(input("Delete a sublist:"))
+        sub2 = int(input("What position do you want to stop at:"))
+        del val[subl:sub2]
+print(val)
+#elif ch==3:
+    
