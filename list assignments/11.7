@@ -1,0 +1,11 @@
+lst = eval(input("enter list"))
+length = len(lst)
+minel = lst[0]
+minindex = 0
+for i in range(1,length):
+    if lst[i] < minel:
+        minel = lst[i]
+        minindex = i
+print("Given list is:",lst)
+print("Then minimum element of the given list is:")
+print(minel,  "at index",minindex)
