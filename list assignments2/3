@@ -1,0 +1,6 @@
+numbers = list(range(0,51,4))
+i = 0
+while i < len(numbers):
+    numbers.reverse()
+    print(numbers[i],end =" ")
+    i += 3
