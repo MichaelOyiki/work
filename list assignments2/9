@@ -1,0 +1,4 @@
+lst = ['a','b']
+lst2 = []
+for i in lst:
+    lst2.append(int(lst.index(i)+1)*i)
