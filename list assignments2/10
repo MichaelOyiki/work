@@ -1,0 +1,7 @@
+L = [2,4,7]
+M = [5,1,9]
+N = []
+for i in range(0,3):
+    if len(L) == len(M):
+        N.append(int(L[i]+int(M[i])))
+print(N)
