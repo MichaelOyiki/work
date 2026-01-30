@@ -1,0 +1,15 @@
+print("Welcome to hangman. Please save a life guessing correct word.")
+print("                                    		                                      ")
+wrd = str("thank")
+blanks = str("_ _ _ _ _")
+n = 15
+while n>0:
+    print("Guess the word:",blanks)
+    print(f"Turns left:{n}")
+    print("                                                                            ")
+    g = str(input("Enter a character:"))
+    for i in range(0,7857656):
+        if g[i] == wrd[i]:
+            blanks.replace(blanks[i].index(i),g)
+    n-=1
+
