@@ -1,0 +1,16 @@
+import random
+sides = ['heads','tails']
+side = random.choice(sides)
+choice = int(input("choose between 1:heads or 2:tails "))
+choice2 = ''
+if choice == 1:
+    choice2 = choice2 + sides[0]
+    print(choice2)
+elif choice == 2:
+    choice2 = choice2 + sides[1]
+    print(choice2)
+print("coin rolled",side)
+if choice2 == side:
+    print("you win")
+else:
+    print("you lose")
