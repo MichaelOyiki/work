@@ -1,0 +1,4 @@
+import random
+fruits = ['apple','orange','pear','banana','kiwi']
+fruit = random.choice(fruits)
+print(fruit)
