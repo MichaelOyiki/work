@@ -1,5 +1,20 @@
 import random
-a = random.randint(1,100)
-op = ['*','//','-','+']
-opp = random.choice(op)
-print(opp)
+count = 0
+while True:
+    a = random.randint(1,100)
+    b = random.randint(1,100)
+    op = ['*','//','-','+']
+    q = [(a*b),(a+b),(a-b),(a//b)]
+    qu = [f"{a}x{b}",f"{a}+{b}",f"{a}-{b}",f"{a}//{b}",]
+    ans = random.choice(q)
+    question = qu[q.index(ans)]
+    answer = int(input(f"Please enter the answer to this question {question}:"))
+    print(f"your score is {count}")
+    toquit = input("continue or quit: ")
+    if answer == ans:
+        count+=1
+    if toquit == 'q':
+        break
+    elif toquit == '':
+        continue
+print(f"Your final score was {count}")
