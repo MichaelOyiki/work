@@ -1,0 +1,15 @@
+i=0
+y = []
+y2 = []
+while i<3:
+    u = int(input(f"Enter 2 digit number {i+1}: "))
+    s = str(u)
+    l = s[::-1]
+    m = int(l)
+    y.append(u**2)
+    y2.append(m**2)
+    i+=1
+if sum(y) == sum(y2):
+        print("These are such 2 digit numbers")
+else:
+    print("These are not such 2 digit numbers")
