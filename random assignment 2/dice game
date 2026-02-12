@@ -1,0 +1,13 @@
+import random
+print("Welcome to my dice game!!")
+nm = input("Please enter your name: ")
+lucky_number = int(input("Please select a lucky number between 1 and 6: "))
+print(f"{nm}'s lucky number was:",lucky_number)
+rmd = random.randint(1,6)
+print("The computer rolled:",rmd)
+if lucky_number > rmd:
+    print("You guessed too high!")
+elif lucky_number < rmd:
+    print("You guessed too low!")
+else:
+    print("You guessed correct, well done!")
