@@ -9,10 +9,12 @@ while True:
     ans = random.choice(q)
     question = qu[q.index(ans)]
     answer = int(input(f"Please enter the answer to this question {question}:"))
-    print(f"your score is {count}")
-    toquit = input("continue or quit: ")
     if answer == ans:
         count+=1
+        print(f"your score is {count}")
+    else:
+        print(f"your score is {count}")
+    toquit = input("continue or quit: ")
     if toquit == 'q':
         break
     elif toquit == '':
