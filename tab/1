@@ -1,0 +1,9 @@
+import math
+x = 7
+a = 2
+b = 2
+c = 1
+d = 4
+
+print(math.sqrt(math.pow(a,2)+math.pow(b,2)+math.pow(c,2)))
+print(2-(5*(math.e)))
