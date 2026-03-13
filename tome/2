@@ -1,0 +1,20 @@
+import random
+choice = input("Enter rock, paper or scissors: ")
+comp = ["rock","paper","scissors"]
+compchoice = (random.choice(comp))
+print("Player chose:",choice)
+print("Computer chose:",compchoice)
+if compchoice == "rock" and choice == "scissors":
+    print("Computer wins")
+elif compchoice == "scissors" and choice == "paper":
+    print("Computer wins")
+elif compchoice == "paper" and choice == "rock":
+    print("Computer wins")
+elif choice == "rock" and compchoice == "scissors":
+    print("Player wins")
+elif choice == "scissors" and compchoice == "paper":
+    print("Player wins")
+elif choice == "paper" and compchoice == "rock":
+    print("Player wins")
+elif choice == compchoice:
+    print("Draw!")
