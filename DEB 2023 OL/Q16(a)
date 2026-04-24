@@ -1,0 +1,9 @@
+# Question 16(a)
+# Name and School:
+price = \u20ac
+flight_num = input("Enter your flight number: ") #"EI121"
+destination = input("Enter your destination: ")
+num_ppl = int(input("Enter the number of people in the travel group: "))
+print("Your flight number is", flight_num)
+print("Your destination is", destination)
+print("There are",num_ppl,"people in the travel group")
