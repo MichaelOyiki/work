@@ -1,0 +1,7 @@
+#Question16_A_OL
+#Enter your name here:
+print("Welcome to the Step Tracker App!")
+steps_today = int(input("Enter the number of steps you walked today: "))
+if steps_today >=10000:
+print("Well done! You reached your goal.")
+Enter
