@@ -1,0 +1,18 @@
+#Q16(a)
+opt = int(input("Enter 1 for Celsius to Fahrenheit conversion or 2 Fahrenheit to Celsius conversion: "))
+def celsius_to_fahrenheit(celsius):
+    fahrenheit = (celsius*9/5)+32
+    return fahrenheit
+if opt == 1:
+    celsius = float(input("Enter the temperature in Celsius: "))
+    kel = celsius+273.15
+    print(round(celsius,2),f"{chr(176)}C is equal to",round(celsius_to_fahrenheit(celsius),2),"degress Fahrenheit")
+def fahrenheit_to_celsius(fahr):
+    cel = ((5/9)*(fahr-32))
+    return cel
+
+
+if opt == 2:
+    fahr = float(input("Enter the temperature in Fahrenheit: "))
+    kel = celsius+273.15
+    print(round(fahr,2),f"{chr(176)}F is equal to",round(fahrenheit_to_celsius(fahr),2),"degrees Celsius and {kel}K")
