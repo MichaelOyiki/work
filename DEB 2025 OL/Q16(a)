@@ -6,7 +6,7 @@ def celsius_to_fahrenheit(celsius):
 if opt == 1:
     celsius = float(input("Enter the temperature in Celsius: "))
     kel = celsius+273.15
-    print(round(celsius,2),f"{chr(176)}C is equal to",round(celsius_to_fahrenheit(celsius),2),"degress Fahrenheit")
+    print(round(celsius,2),f"{chr(176)}C is equal to",round(celsius_to_fahrenheit(celsius),2),f"degress Fahrenheit and {kel}K")
 def fahrenheit_to_celsius(fahr):
     cel = ((5/9)*(fahr-32))
     return cel
