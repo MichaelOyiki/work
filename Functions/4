@@ -1,0 +1,8 @@
+def old_mcdonald(a):
+    if len(a)<4:
+        result2 = "404"
+    g = a.replace(a[0],a[0].upper(),1)
+    result2 = g.replace(g[3],g[3].upper(),1)
+    return result2
+x = old_mcdonald("macdonald")
+print(x)
