@@ -1,0 +1,10 @@
+def makes_twenty(a,b):
+    if (a+b)==20:
+        result = "True"
+    elif a==20 or b==20:
+        result = "True"
+    else:
+        result = "False"
+    return result
+x = makes_twenty(15,5)
+print(x)
