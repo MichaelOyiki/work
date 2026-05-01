@@ -1,0 +1,8 @@
+def animal_crackers(a,b):
+    if a[0]==b[0]:
+        result = "True"
+    else:
+        result = "False"
+    return result
+x = animal_crackers("llll","ll")
+print(x)
