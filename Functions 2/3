@@ -1,0 +1,8 @@
+def mean_numbs(a):
+    if len(e)%2==1:
+        result = ((a+1)/2)
+    #e = [1,23]
+    return result
+e = eval(input("enter numbs: "))
+x = mean_numbs(e)
+print(x)
