@@ -1,0 +1,7 @@
+def mean_numbs(a,b):
+    result = a/b
+    #e = [1,23]
+    return result
+e = eval(input("enter numbs: "))
+x = mean_numbs(sum(e),len(e))
+print(x)
