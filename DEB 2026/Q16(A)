@@ -1,0 +1,8 @@
+books = []
+i = 1
+nums = int(input("How many books have you read? "))
+while i<nums:
+    title = (input("Enter the title of the book you've read: "))
+    i +=1
+books.append(title)
+print(books)
