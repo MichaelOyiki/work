@@ -1,0 +1,7 @@
+def range_numbs(a,b):
+    result = a-b
+    #e = [1,23]
+    return result
+e = eval(input("enter numbs: "))
+x = range_numbs(max(e),min(e))
+print(x)
