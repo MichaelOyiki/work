@@ -7,4 +7,4 @@ def often_numbs(a):
 e = eval(input("enter numbs: "))
 r = int(input("Enter a number to find the frequency of occurence: "))
 x = often_numbs(0)
-print(f"{r} occurs {x} times")
+print(f"The number {r} occurs {x} times")
