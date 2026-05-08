@@ -1,0 +1,7 @@
+def mode_numb(a):
+    if 
+        result = 
+    return result
+e = eval(input("enter numbs: "))
+x = mode_numb()
+print(x)
