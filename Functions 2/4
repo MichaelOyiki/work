@@ -1,9 +1,9 @@
 def mean_numbs(a):
     if len(e)%2==1:
-        result = int((a+1)/2)
+        result = e[(int((a+1)/2)-1)]
     else:
-        result = int((((a/2)+(a/2+1))/2))
+        result = (e[int((a+1)/2)]+e[int((a+1)/2)-1])/2
     return result
 e = eval(input("enter numbs: "))
 x = mean_numbs(len(e))
-print(e[x-1])
+print(x)
