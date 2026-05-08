@@ -1,9 +1,9 @@
-def mean_numbs(a):
+def median_numb(a):
     if len(e)%2==1:
         result = e[(int((a+1)/2)-1)]
     else:
         result = (e[int((a+1)/2)]+e[int((a+1)/2)-1])/2
     return result
 e = eval(input("enter numbs: "))
-x = mean_numbs(len(e))
+x = median_numb(len(e))
 print(x)
