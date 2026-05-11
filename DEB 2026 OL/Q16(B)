@@ -1,0 +1,23 @@
+count = 0
+cvowel = 0
+inp = input("Enter a sentence: ")
+for i in range(0,len(inp)):
+    if " " in inp[i]:
+        count+=1
+#print(count)
+words = count+1
+for i in range(0,len(inp)):
+    if "a" in inp[i]:
+        cvowel+=1
+    elif "e" in inp[i]:
+        cvowel+=1
+    elif "i" in inp[i]:
+        cvowel+=1
+    elif "o" in inp[i]:
+        cvowel+=1
+    elif "u" in inp[i]:
+        cvowel+=1
+#print(cvowel)
+print(f'The sentence "{inp}" contains:')
+print(words,"words")
+print(cvowel,"vowels")
