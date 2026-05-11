@@ -1,8 +1,13 @@
 books = []
-i = 1
+i = 0
 nums = int(input("How many books have you read? "))
 while i<nums:
     title = (input("Enter the title of the book you've read: "))
     i +=1
-books.append(title)
-print(books)
+    books.append(title)
+if len(books)>=3:
+    print(f"Fantastic! You've read {len(books)} books - keep reading!")
+print("Book(s) read:",)
+for i in range(0,len(books)):
+    print(books[i])
+    i +=1
