@@ -1,11 +1,11 @@
 def mode_numb(a):
-    result = a
     while a<len(e):
         count = e.count(e[a])
         a+=1
         num_count.append(count)
         mode = max(num_count)
         pos = num_count.index(mode)
+        result = e[pos]
     return result
 e = eval(input("enter numbs: "))
 num_count = []
