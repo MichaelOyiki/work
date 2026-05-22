@@ -1,7 +1,13 @@
 def mode_numb(a):
-    if 
-        result = 
+    result = a
+    while a<len(e):
+        count = e.count(e[a])
+        a+=1
+        num_count.append(count)
+        mode = max(num_count)
+        pos = num_count.index(mode)
     return result
 e = eval(input("enter numbs: "))
-x = mode_numb()
+num_count = []
+x = mode_numb(0)
 print(x)
