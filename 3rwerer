@@ -1,0 +1,12 @@
+d =[2,5,8,12,16,56,23,72,38,91]
+d.sort()
+f = 0
+j = len(d)-1
+num = int(input("What number are you trying to find is this list? "))
+while f<=j:
+    g = d[(f+j)//2]
+    if d[g]==num:
+        print("found it")
+        break
+    f+=1
+    
