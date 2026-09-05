@@ -1,0 +1,6 @@
+l1 = [10,8,6,4,2]
+nrng = len(l1)-1
+for i in range(nrng):
+    for i in range(0,nrng):
+        if l1[i] > l1[i + 1]:
+            l1[i], l1[i + 1] = l1[i + 1], l1[i]
