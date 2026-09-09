@@ -1,0 +1,9 @@
+L = [2,5,4]
+M = []
+t = len(L)
+
+#for i in range(t):
+for i in range(0,t):
+    if len(L)>0:
+        item = L.pop(i)
+        M.append(item)
