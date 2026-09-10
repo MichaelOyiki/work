@@ -1,9 +1,15 @@
 L = [2,5,4]
 M = []
 t = len(L)
-
+for i in range(t-1):
+    for i in range(0,t-1):
+        if L[i] < L[i + 1]:
+            L[i], L[i + 1] = L[i + 1], L[i]
 #for i in range(t):
 for i in range(0,t):
     if len(L)>0:
-        item = L.pop(L.index(min(L)))
+        item = L.pop()
         M.append(item)
+        
+print(L)
+print(M)
