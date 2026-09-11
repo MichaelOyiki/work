@@ -1,0 +1,9 @@
+L = [2,5,4,7,6,9,8,11,10,13,12,15,14]
+t = len(L)
+M = L[1]
+for i in range(0,t-1):
+    cmin = i
+    for j in range(i+1,t-1):
+        if L[j]<L[cmin]:
+            cmin = L[j]
+    
