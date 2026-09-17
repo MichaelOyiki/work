@@ -1,0 +1,5 @@
+import sqlite3
+name =
+department =
+salary =
+db_connection = sqlite3.connect("mydatabase5.db")
