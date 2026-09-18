@@ -1,0 +1,26 @@
+import sqlite3
+db_connection = sqlite3.connect("mydatabase5.db")
+cursor = db_connection.cursor()
+createTable = '''create table if not exists users(
+id integer primary key autoincrement,
+Player text not null,
+Year integer,
+Appearance integer,
+Goals integer
+) STRICT'''
+cursor.execute(createTable)
+db_connection.commit()
+addData = '''insert into users (Player,Year,Appearance,Goals) values (?,?,?,?)'''
+a = str(input("Enter the player's name: "))
+b = int(input("Enter the year: "))
+c = int(input("Enter the appearances: "))
+d = int(input("Enter the amount of goals that they scored: "))
+cursor.execute(addData,(a,b,c,d))
+db_connection.commit()
+fetchData = '''select * from users'''
+cursor.execute(fetchData)
+rowsInTable = cursor.fetchall()
+for row in rowsInTable:
+    print(row)
+cursor.close()
+db_connection.close()
