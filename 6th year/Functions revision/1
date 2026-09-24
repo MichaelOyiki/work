@@ -1,0 +1,31 @@
+def mean_numbs(a,b):
+    result=a/b
+    return result
+L = [4,2,4,5,7,8,9,7,3]
+x = mean_numbs(sum(L),len(L))
+print(x)
+
+def median_numbs(a):
+    if len(L)%2==1:
+        result = L[(len(L)//2)]
+    else:
+        result = (L[(len(L)//2)-1]+L[(len(L)//2)])/2
+    return result
+L = [4,2,4,5,7,8,9,7,3]
+x = median_numbs(L)
+print(x)
+
+def mode_numbs(a):
+    while a<len(L):
+        count= L.count(L[a])
+        a+=1
+        L1.append(count)
+        mode = max(L1)
+        pos = L1.index(mode)
+        result = L[pos]
+    return result
+L = [4,2,5,5,3]
+L1 = []
+x = mode_numbs(0)
+print(x)
+        
