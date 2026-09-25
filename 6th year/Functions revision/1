@@ -24,8 +24,26 @@ def mode_numbs(a):
         pos = L1.index(mode)
         result = L[pos]
     return result
-L = [4,2,5,5,3]
+L = [4,2,4,4,5,5,3]
 L1 = []
 x = mode_numbs(0)
 print(x)
-        
+
+def freq_numbs(a):
+    #while a<len(L):
+    #for a in L:
+    #element = int(input("Enter a number: "))
+    count = L.count(element)
+    result = count
+    return result
+L = [4,2,4,5,7,8,9,7,3]
+element = int(input("Enter a number: "))
+x = freq_numbs(element)
+print(x)
+
+def range_numbs(a,b):
+    result = a-b
+    return result
+L = [4,2,4,4,5,5,3]
+x = range_numbs(max(L),min(L))
+print(x)
