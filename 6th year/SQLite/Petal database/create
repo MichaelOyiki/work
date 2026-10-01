@@ -6,9 +6,9 @@ db_cursor = db_connection.cursor()
 
 createTable = """create table if not exists irisData(
 sepal_id integer primary key autoincrement,
-sepal_length real not null.
+sepal_length real not null,
 sepal_width real not null,
-petal_length real not null.
+petal_length real not null,
 petal_width real not null,
 class integer not null
 ) STRICT
