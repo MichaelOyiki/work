@@ -1,0 +1,9 @@
+import sqlite3
+db_connection = sqlite3.connect("iris.db")
+cursor = db_connection.cursor()
+get_data_from_db = """
+select sepal_length from irisData;
+"""
+cursor.execute(get_data_from_db)
+data = cursor.fetchall()
+print(data)
