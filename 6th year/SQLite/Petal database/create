@@ -1,0 +1,17 @@
+import sqlite3
+
+db_connection = sqlite3.connect("iris.db")
+
+db_cursor = db_connection.cursor()
+
+createTable = """create table if not exists irisData(
+sepal_id integer primary key autoincrement,
+sepal_length real not null.
+sepal_width real not null,
+petal_length real not null.
+petal_width real not null,
+class integer not null
+) STRICT
+"""
+db_cursor.execute(createTable)
+db_connection.commit()
