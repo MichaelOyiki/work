@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<label for='user_name'>User Name:</label>
+<input id='user_name' name='user_name'>
+<p>User name entered: <span id='user_name_place_holder'> ----</span> </p>
+<br>
+<button onclick= 'update_user_name_btn()'>Click me</button>
+<br>
+<textarea id='user_dataset_1' name='user_dataset_1' rows='5' cols='32' placeholder ='Enter your data here...'>
+</textarea>
+<p>Average of numbers in text area: <span id='user_dataset_1_placeholder'> ----</span> </p>
+<br>
+<button onclick= 'calculate_mean_btn()'>Calculate average</button>
+<p>Median of numbers in text area: <span id='median_result'> ----</span> </p>
+<br>
+<button onclick= 'calculate_median_btn()'>Calculate median</button>
+<p>Mode of numbers in text area: <span id='mode_result'> ----</span> </p>
+<br>
+<button onclick= 'calculate_mode_btn()'>Calculate mode</button>
+<p>Frequency of numbers in text area: <span id='user_dataset_1_placeholder'> ----</span> </p>
+<br>
+<button onclick= 'calculate_frequency_btn()'>Calculate frequency </button>
+<p>Range of numbers in text area: <span id='user_dataset_1_placeholder'> ----</span> </p>
+<br>
+<button onclick= 'calculate_range_btn()'>Calculate range </button>
+<script src="JS1.js" type="text/javascript"></script>
+</body>
+</html>
