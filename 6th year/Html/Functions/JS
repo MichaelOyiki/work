@@ -38,3 +38,54 @@ return median
 function calculate_median_btn(){
     document.getElementById('median_result').innerHTML = calculate_median();
 }
+
+function calculate_mode(){
+let data_from_user = document.getElementById('user_dataset_1').value;
+let data_in_list = data_from_user.split(',')
+let mode_map = {};
+let max_count = 0;
+for (let temp of data_in_list){
+    if (mode_map[temp] == undefined){
+        mode_map[temp] = 1;
+    } else {
+        mode_map[temp] += 1;
+    }
+    if (mode_map[temp] > max_count){
+        max_count = mode_map[temp];
+        mode = temp;
+    }
+}
+return mode;
+}
+function calculate_mode_btn(){
+    document.getElementById('mode_result').innerHTML = calculate_mode();
+}
+
+function calculate_frequency(){
+let data_from_user = document.getElementById('user_dataset_1').value;
+let data_in_list = data_from_user.split(',')
+let frequency_map = {};
+for (let temp of data_in_list){
+    if (frequency_map[temp] == undefined){
+        frequency_map[temp] = 1;
+    } else {
+        frequency_map[temp] += 1;
+    }
+}
+return frequency_map;
+}
+function calculate_frequency_btn(){
+    document.getElementById('frequency_result').innerHTML = JSON.stringify(calculate_frequency());
+}
+
+function calculate_range(){
+let data_from_user = document.getElementById('user_dataset_1').value;
+let data_in_list = data_from_user.split(',')
+let max_value = Math.max(...data_in_list);
+let min_value = Math.min(...data_in_list);
+let range = max_value - min_value;
+return range;
+}
+function calculate_range_btn(){
+    document.getElementById('range_result').innerHTML = calculate_range();
+}
