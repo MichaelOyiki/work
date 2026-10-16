@@ -1,2 +1,9 @@
-inp = input("say something: ")
-dict1 = {"Word":"Count"}
+sentence = input("Enter a sentence: ")
+words = sentence.lower().split()
+counts = {}
+for w in words:
+    counts[w] = counts.get(w, 0) + 1
+print("Total words:", len(words))
+print("{:<15} {}".format("Word", "Count"))
+for word, count in sorted(counts.items()):
+    print("{:<15} {}".format(word, count))
