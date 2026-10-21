@@ -1,0 +1,16 @@
+sentence = input("Enter a sentence: ")
+words = sentence.lower().split()
+counts = {}
+for w in words:
+    counts[w] = counts.get(w, 0) + 1
+print("Total words:", len(words))
+print("{:<15} {}".format("Word", "Count"))
+for word, count in sorted(counts.items()):
+    print("{:<15} {}".format(word, count))
+letcounts = {}
+for l in sentence:
+    letcounts[l] = letcounts.get(l, 0) + 1
+print("Total letters:", len(sentence))
+print("{:<15} {}".format("Character", "Count"))
+for character, count in sorted(letcounts.items()):
+    print("{:<15} {}".format(character, count))
