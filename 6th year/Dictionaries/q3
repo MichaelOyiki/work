@@ -1,4 +1,5 @@
-sentence = input("Enter a sentence: ")
+with open("book.txt", "r", encoding="utf-8") as f:
+    sentence = f.read()
 words = sentence.split()
 counts = {}
 for w in words:
