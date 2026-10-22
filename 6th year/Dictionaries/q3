@@ -1,4 +1,4 @@
-with open("book.txt", "r", encoding="utf-8") as f:
+with open(r"C:\Users\22MOyiki.ACC\Downloads\book.txt", "r", encoding="utf-8") as f:
     sentence = f.read()
 words = sentence.split()
 counts = {}
