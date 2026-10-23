@@ -13,17 +13,22 @@ def calculate_readability_score(text):
     for i in range(0,len(words)):
         if len(words[i])<=2:
             short_word_count+=1
+    complex_word_count = 0
+    for i in range(0,len(words)):
+        if "a" in words[i]:
+            complex_word_count+=1
 # Initialise the number of sentences
     sentence_count = text.count(".")
 # Calculate the readability score
     score = 0.4*((word_count/sentence_count)+100*(word_count-short_word_count)/word_count)
     score = round(score, 2) # Round the score to 2 d.p.
-    return score, short_word_count
+    return score, short_word_count, complex_word_count
 # Set the text for analysis
 text1 = """Elaborate sentences influence readability in subtle
 and unpredictable ways."""
 # Calculate the score for text1
 short_word_count = calculate_readability_score(text1)[1]
+complex_word_count = calculate_readability_score(text1)[2]
 score1 = calculate_readability_score(text1)[0]
 print("Short Words:",short_word_count)
 print("Readability Score 1:",score1)
@@ -38,6 +43,7 @@ def calculate_readability_score(text):
     for i in range(0,len(words)):
         if len(words[i])<=2:
             short_word_count+=1
+    complex_word_count = 0
 # Initialise the number of sentences
     sentence_count = text.count("!")
 # Calculate the readability score
