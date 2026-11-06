@@ -1,0 +1,11 @@
+def sum_of_list(l):
+    if len(l)==0:
+        return 0
+    else:
+        if l[0] in l:
+            return 1 + sum_of_list(l[1:])
+        else:
+            return 0 + sum_of_list(l[1:])
+l = input("")
+x = sum_of_list(l)
+print(x)
