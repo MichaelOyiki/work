@@ -1,0 +1,9 @@
+def sum_of_list(l):
+    if len(l) == 0:
+        return 0
+    if l[0] > 0:
+        return l[0] + sum_of_list(l[1:])
+    return sum_of_list(l[1:])
+
+l = (2, 3, -4, 324, 43, -43, 34, 43, 6, 65)
+print(sum_of_list(l))
