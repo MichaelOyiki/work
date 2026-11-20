@@ -1,0 +1,8 @@
+@app.route('/forms_test')
+def forms_test():
+    return render_template('forms_test.html')
+
+@app.route('/receive_form_data', methods=['POST'])
+def receive_form_data():
+    print(request.form)
+    return 'Apple'
